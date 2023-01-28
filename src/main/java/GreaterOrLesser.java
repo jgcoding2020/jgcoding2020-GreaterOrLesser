@@ -10,6 +10,11 @@ public class GreaterOrLesser {
      *          If neither is true, return "Equal". This problem is case-sensitive!
      */
     public String decide(int a, int b){
-        return "Equal";
+        if (a < b) // condition is true if a is less than b
+            return "Lesser";
+        else if (a > b) // condition is true if a is greater than b 
+            return "Greater";
+        else // in this condition a equals b
+            return "Equal";
     }
 }
